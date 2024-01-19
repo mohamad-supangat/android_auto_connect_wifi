@@ -19,5 +19,8 @@ am start -n com.steinwurf.adbjoinwifi/.MainActivity -e ssid Ukurdanuji
 sleep 10
 am start -a android.intent.action.VIEW -d http://wifi.jvm/login
 sleep 5
+
+
+am force-stop com.steinwurf.adbjoinwifi
 am force-stop com.xbrowser.play
 

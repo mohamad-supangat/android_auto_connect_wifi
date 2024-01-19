@@ -36,20 +36,20 @@ done
 
 echo "Unable to establish internet connection."
 # Disconnect from current Wi-Fi network
-svc wifi disable
+# svc wifi disable
 
 # Wait for Wi-Fi to disconnect
-sleep 5
+# sleep 5
 
 # Enable Wi-Fi
-svc wifi enable
+# svc wifi enable
 
 sh /data/adb/login_wifi.sh >> /data/wifi_log.txt
 
 echo "Disconnected from internet. Attempting to reconnect to Wi-Fi network $ssid."
 
 # Wait for Wi-Fi network connection to be established
-sleep 10
+# sleep 10
 
 # Check if Wi-Fi network connection was successful
 if ip route | grep default | grep wlan0 > /dev/null; then
